@@ -57,9 +57,9 @@ llsfrb:
 
     public-peer:
       host: !ipv4 192.168.1.255
-      port: !udp-port 4444
-      #send-port: !udp-port 4444
-      #recv-port: !udp-port 4445
+      #port: !udp-port 4444
+      send-port: !udp-port 4444
+      recv-port: !udp-port 4445
 
     b-it-bots-peer:
       host: !ipv4 192.168.1.255
@@ -75,9 +75,9 @@ llsfrb:
 
     SPQR-peer:
       host: !ipv4 192.168.1.255
-      port: !udp-port 4450
-      #send-port: !udp-port 4450
-      #recv-port: !udp-port 4451
+      #port: !udp-port 4450
+      send-port: !udp-port 4450
+      recv-port: !udp-port 4451
 
   mongodb:
     enable: true
